@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - print if the number is positive, zero, or negative
+ * main - print if the number is postive, zero, or negative
  *
  * Description: using the main function
- * Return (0)
+ * this program prints "Programming is positive, zero, or negative
  */
 int main(void)
 {
 int i;
-for (i =0; i < 10; i++)
+for (i = 0; i < 10; i++)
 {
 	printf("%i", i);
 }
-printf('\n');
+printf("\n");
 return (0);
 }
