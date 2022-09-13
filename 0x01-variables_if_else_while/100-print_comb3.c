@@ -1,1 +1,32 @@
-VimCrypt~03!íØ=‚0y¹—ò†÷6×ˆïŸ”åßÔ¶ÓªºëG&¹$› _µ}±²Á«¢-şGn—Dï~­ØæßßfäÀ^ùîöú¹ÿ~ox	'®*+’éÙ÷8Ÿp	êó…¡8[dÛp"ÀQbPêˆ¸xĞ+q'aÚ!U©«‹,¿"ğ+lÛº“ˆ)‡ı¦A¾QòÒÉĞİöŸXNË °ëm¼G¬Úx°©U–g`šOÅ‘F@‘Ö˜îã6r’ñ0£Ÿ~¬øÙ mùÛHoËRËı<õÈ¶k°m¾Ú!²9†ˆ& í»qù<8ÒìÂï`-QÊz&'E@c|¬Êı-`¢1è1ìÉèÈ”<UëR–§Yô¯sZ¦söKœĞTx›0Ï?Õ¢µ¯©Ô­#£©µn±/¦­àl,7‘V,÷v®_¼]H0$px@ğŒ·(
+#include <stdio.h>
+/**
+* main - program that prints all possible different combinations of 2 digits
+* Return: 0
+*/
+int main(void)
+{
+	int c = 0;
+	int f_d;
+	int l_d;
+
+	while (c <= 99)
+	{
+		f_d = (c / 10 + '0');
+		l_d = (c % 10 + '0');
+
+		if (f_d < l_d)
+		{
+			putchar(f_d);
+			putchar(l_d);
+
+			if (c != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+		c++;
+	}
+putchar('\n');
+return (0);
+}
