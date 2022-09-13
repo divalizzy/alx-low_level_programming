@@ -24,15 +24,14 @@ int main(void)
 
 			if (c != 789)
 			{
-				putchar(',');	
+				putchar(',');
 				putchar(' ');
 			}
 		}
-		c++;		
+		c++
 	}
 putchar('\n');
 return (0);
 }
-	
 
 
