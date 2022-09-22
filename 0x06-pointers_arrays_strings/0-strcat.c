@@ -1,6 +1,3 @@
-#include "main
-rm 0-strcat.c
-cat > 0-strcat.c
 #include "main.h"
 
 /**
@@ -9,7 +6,7 @@ cat > 0-strcat.c
  *@dest: String that will be appended
  *@src: String to be concatenated upon
  *
- * Return: returns poiner to @dest
+ * Return: returns pointer to @dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -20,9 +17,10 @@ char *_strcat(char *dest, char *src)
 	while (dest[index++])
 		dest_len++;
 
-	for (index = 0; src[index];
-index++)
+
+	for (index = 0; src[index]; index++)
 		dest[dest_len++] = src[index];
 
 	return (dest);
 }
+
