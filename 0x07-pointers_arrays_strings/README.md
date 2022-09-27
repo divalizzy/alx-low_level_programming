@@ -1,1 +1,1 @@
-goodmorning
+more pointers and strings
